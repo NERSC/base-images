@@ -1,0 +1,9 @@
+FROM nersc/ubuntu-mpi:14.04
+
+ADD helloworld.c /helloworld.c
+
+RUN mkdir /app && mpicc /helloworld.c -o /app/hello
+
+
+
+
